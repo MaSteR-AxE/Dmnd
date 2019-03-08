@@ -19,7 +19,7 @@ chmod +x tg
  sudo apt-get -y update && sudo apt-get -y upgrade 
  sudo apt-get --force-yes install git wget screen tmux libconfig9 libevent-dev libjansson4 libstdc++6 lua-socket lua5.2 liblua5.2 make unzip redis-server software-properties-common g++
       sudo apt-get -y update && sudo apt-get -y upgrade
-      sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test && sudo apt-get update && sudo apt-get install -y gcc-4.9 g++-4.9 && sudo update-alternatives —install /usr/bin/gcc gcc /usr/bin/gcc-4.9 60 —slave /usr/bin/g++ g++ /usr/bin/g++-4.9
+      sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test && sudo apt-get update && sudo apt-get install -y gcc-4.9 g++-4.9 && sudo update-alternatives â€”install /usr/bin/gcc gcc /usr/bin/gcc-4.9 60 â€”slave /usr/bin/g++ g++ /usr/bin/g++-4.9
 	    sudo apt-get -y update && sudo apt-get -y upgrade && sudo apt-get -y dist-upgrade && sudo apt-get -y autoremove
 		sudo service redis-server restart+
 #------launch-----------
@@ -113,8 +113,6 @@ tmux kill-session -t "Tabchi5"
 tmux new-session -d -s "Tabchi5" "./Dmnd launch 5"
 tmux detach -s "Tabchi5"
 yellow "Bot5 Running !"
-sleep 5
-yellow "End !"
 
 #5
 sleep 5
@@ -122,8 +120,6 @@ tmux kill-session -t "Tabchi6"
 tmux new-session -d -s "Tabchi6" "./Dmnd launch 6"
 tmux detach -s "Tabchi6"
 yellow "Bot6 Running !"
-sleep 5
-yellow "End !"
 
 #5
 sleep 5
@@ -131,8 +127,6 @@ tmux kill-session -t "Tabchi7"
 tmux new-session -d -s "Tabchi7" "./Dmnd launch 7"
 tmux detach -s "Tabchi7"
 yellow "Bot7 Running !"
-sleep 5
-yellow "End !"
 
 #5
 sleep 5
