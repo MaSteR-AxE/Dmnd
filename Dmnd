@@ -35,7 +35,7 @@ Good-Luck --MaSteR-AxE--"
 #--NEW-COMMAND---> UPDATE-SOURCE-FROM--> your github----//if you didnt git cloned the source from github//DON'T use this command :/
 elif [ "$1" = "update" ]; then
 git fetch --all && git reset --hard origin && chmod 777 Dmnd && chmod +x tg
-green "The Source Updated From --> https://github.com/MaSteR-AxE/Dmnnd"
+green "The Source Updated From --> https://github.com/MaSteR-AxE/Dmnnd.git"
 
 #------launch-----------
 elif [ "$1" = "launch" ]; then
