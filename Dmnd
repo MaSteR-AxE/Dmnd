@@ -34,8 +34,8 @@ chmod +x tg
 
 #----New-COMMAND--> Help--------------
 elif [ "$1" = "help" ]; then
-blue 
-"you can use this command's :
+blue "
+you can use this command's :
   ./Dmnd install --> to install the Source
   ./Dmnd create --> to create a bot user and set your Bot-Number
   ./Dmnd launch <Bot-Number> --> to luanch your bot
