@@ -13,6 +13,15 @@ green() {
 yellow() {
   printf '\e[1;33m%s\n\e[0;39;49m' "$@"
 }
+# blue
+blue() {
+  printf '\e[1;36m%s\n\e[0;39;49m' "$@"
+}
+# brown
+brown() {
+  printf '\e[1;33m%s\n\e[0;39;49m' "$@"
+}
+
 #----install-----------
 if [ "$1" = "install" ]; then
 chmod +x tg
@@ -22,6 +31,7 @@ chmod +x tg
       sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test && sudo apt-get update && sudo apt-get install -y gcc-4.9 g++-4.9 && sudo update-alternatives —install /usr/bin/gcc gcc /usr/bin/gcc-4.9 60 —slave /usr/bin/g++ g++ /usr/bin/g++-4.9
 	    sudo apt-get -y update && sudo apt-get -y upgrade && sudo apt-get -y dist-upgrade && sudo apt-get -y autoremove
 		sudo service redis-server restart+
+
 #----New-COMMAND--> Help--------------
 elif [ "$1" = "help" ]; then
 blue "you can use this command's :
@@ -56,6 +66,7 @@ sleep 5
 yellow "Bot Running !"
 done
 fi
+
 #------create-----------
 elif [ "$1" = "create" ]; then
 if [ -z "$2" ]; then
@@ -93,6 +104,7 @@ read Phone
 cat bot >> bot_$BOT.lua
 sleep 5
 yellow "Done Bot"$BOT" Created , Launch With ./Dmnd launch "$BOT" !"
+
 #------auto-----------
 elif [ "$1" = "auto" ]; then
 #1
