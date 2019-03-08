@@ -36,13 +36,15 @@ chmod +x tg
 elif [ "$1" = "help" ]; then
 blue "
 you can use this command's :
+
   ./Dmnd install --> to install the Source
   ./Dmnd create --> to create a bot user and set your Bot-Number
   ./Dmnd launch <Bot-Number> --> to luanch your bot
   ./Dmnd auto --> to Run your all bot's in screen and tmux tool
   ./Dmnd update --> to Update The Source from your github.com
 
-Good-Luck --MaSteR-AxE--"
+Good-Luck --MaSteR-AxE--
+"
 
 #--NEW-COMMAND---> UPDATE-SOURCE-FROM--> your github----//if you didnt git cloned the source from github//DON'T use this command :/
 elif [ "$1" = "update" ]; then
