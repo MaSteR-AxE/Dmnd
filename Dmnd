@@ -166,7 +166,8 @@ tmux new-session -d -s "Tabchi8" "./Dmnd launch 8"
 tmux detach -s "Tabchi8"
 yellow "Bot8 Running !"
 sleep 5
-yellow "End !"
+yellow "End ! this version of Dmnd Source is EdiTeD-By--> @MaSteR_AxE
+Enjoy it"
 
 #------end-----------
 fi
